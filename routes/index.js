@@ -51,7 +51,7 @@ router.post('/submit', validateFormData, (req, res) => {
                                     console.error('Error updating record:', err);
                                     return res.status(500).send('Internal Server Error');
                                 }
-                                res.send('Record updated successfully');
+                                res.redirect('/Felicitation Ceremony for Newly Promoted Maj Gen KAN Rasika and Maj Gen MPK Madurapperuma on 25 Sep 2023.pdf');
                             });
                             } else {
                             // Insert a new record if no matching record exists
@@ -61,7 +61,7 @@ router.post('/submit', validateFormData, (req, res) => {
                                     console.error('Error inserting record:', err);
                                     return res.status(500).send('Internal Server Error');
                                 }
-                                res.send('Record updated successfully');
+                                res.redirect('/Felicitation Ceremony for Newly Promoted Maj Gen KAN Rasika and Maj Gen MPK Madurapperuma on 25 Sep 2023.pdf');
                             });
                                     }
       
