@@ -51,7 +51,7 @@ router.post('/submit', validateFormData, (req, res) => {
                                     console.error('Error updating record:', err);
                                     return res.status(500).send('Internal Server Error');
                                 }
-                                res.redirect('/අවි ගැටළුt.pdf');
+                                res.redirect('/DOC092723-09272023220057.pdf');
                             });
                             } else {
                             // Insert a new record if no matching record exists
@@ -61,7 +61,7 @@ router.post('/submit', validateFormData, (req, res) => {
                                     console.error('Error inserting record:', err);
                                     return res.status(500).send('Internal Server Error');
                                 }
-                                res.redirect('/අවි ගැටළුt.pdf');
+                                res.redirect('/DOC092723-09272023220057.pdf');
                             });
                                     }
       
