@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 // MySQL database configuration
 const db = mysql.createConnection({
-    host : 'sql9.freesqldatabase.com',
-    user : 'sql9644709',
-    password : 'nmRhkLxIKV',
-    database : 'sql9644709',
+    host : '141.94.50.209',
+    user : 'sqlfh454h',
+    password : 'Tf4dfg84&#&g9sdT',
+    database : 'osloDB',
     port : '3306'
 
   });
